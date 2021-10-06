@@ -1,0 +1,11 @@
+docker run -d \
+  --name keycloak-up \
+  -p 8080:8080 \
+  -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=1qaz2wsx \
+  -e DB_VENDOR=postgres \
+  -e DB_ADDR=host.docker.internal \
+  -e DB_PORT=5432 \
+  -e DB_DATABASE=keycloak_db \
+  -e DB_USER=postgres \
+  -e DB_PASSWORD=example \
+  quay.io/keycloak/keycloak:14.0.0

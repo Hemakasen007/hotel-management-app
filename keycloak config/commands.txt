@@ -1,0 +1,1 @@
+docker run -p 80808080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.iokeycloakkeycloak14.0.0
