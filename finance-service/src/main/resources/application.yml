@@ -1,0 +1,10 @@
+STRIPE_SECRET_KEY: sk_test_51JGECuAhx4mRSFqpyNik2KsEzZiXd5rUhxCsmtZnrCFLwZEqk2pc51uzksXssWw0j4io1S4mdL8n0Fc3Optx4pO800oeWOd0Tr
+STRIPE_PUBLIC_KEY: pk_test_51JGECuAhx4mRSFqpSgjHrtrJcCQHs6I5uKkPz3tzpvo2RWfcVT3UPEsuDu8FriqLoJq9OzOp2zzc9llOE2KdzkEy001J4Y9Bux
+
+server.port: 8096
+
+service:
+  hotel:
+    base: http://localhost:8098
+    get-price: /api/v1/payment-invoice/price
+    update-invoice: /api/v1/payment-invoice/update-paid
