@@ -1,0 +1,19 @@
+
+
+keycloak-config:
+  master:
+    server-url: 'http://localhost/8080/auth'
+    realm: master
+    client-id: admin-cli
+    username: admin
+    password: 1qaz2wsx
+  app-realm:
+    realm: hotel-realm
+
+server:
+  port: 8089
+
+pin:
+  encryption:
+    initVector: RandomInitVector
+    key: cRfTjWnZr4u7x!A%D*G-KaPdSgVkXp2s
